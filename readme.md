@@ -25,10 +25,11 @@ ILCC’s ROS package
 `cd catkin_ws/src/ilcc-ros`  
 `git clone https://github.com/hai12hai12/lidar.git`  
 `cd catkin_ws`  
-`catkin_make`  
+`catkin_make -DCATKIN_WHITELIST_PACKAGES="ilcc-ros"`  
 
 ### Explanation of files
 
+bin: The file in bin are executable files of python and can be run directly.  
 load: ROS Signal Reception and File Storage.  
 Registion:File Registration for Alignment.  
 Visualization:Visualization of Alignment Results.   
