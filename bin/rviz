@@ -18,7 +18,7 @@ from std_msgs.msg import Header, ColorRGBA
 
 rospy.init_node("pc2_publisher")
 
-def publish_pc2(pc, topic= '/points_segs'):#, repeat = 5): #sys.maxint
+def publish_pc2(pc, topic= '/points_raw'):#, repeat = 5): #sys.maxint
     """Publisher of PointCloud data"""
     pub = rospy.Publisher(topic, PointCloud2, queue_size=100)
     header = std_msgs.msg.Header()
